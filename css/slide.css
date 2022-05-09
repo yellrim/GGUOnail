@@ -1,0 +1,52 @@
+@charset 'utf-8';
+h3{
+    display: none;
+}
+.nav li:nth-child(1){
+    color: #e5a67a;
+}
+
+.slide { 
+    position:relative;
+    width:100%;
+}
+.slider-div {
+    /* slick을 적용시킬 요소 */
+    margin: 50px 100px;
+
+}
+.item {
+    /* 슬라이드 되어야 할 아이템 */
+    width:calc(100%/7);
+    height:300px;
+}
+.slide-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.next,.prev {
+    position:absolute;
+    top:45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #fff;
+    color: #e5a67a;
+    border: 2px solid #e2e2e2;
+}
+.next {
+    right:6%;
+}
+.prev {
+    left: 6%;
+}
+.slick-dots li button:before{
+    color: #e5a67a;
+}
+.slick-dots li.slick-active button:before{
+    color: #e5a67a;
+}
