@@ -12,10 +12,11 @@
 }
 .nail-box{
     margin: 80px;
+    border-bottom: 1px solid #e5a67a;
 }
-/* img:hover{
-    transform: calc(2,0.5);
-} */
+img:hover{
+    transform: scale(1.5);
+}
 .nail-box p{
     display: flex;
     justify-content:center;

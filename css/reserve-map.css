@@ -29,8 +29,10 @@
     color: #d4d4d4;
     text-align: center;
 }
-/* .map h3,.map span{
-    display: flex;
-    justify-content: center;
-    align-items:baseline;
-} */
+hr{
+    width: 50px;
+    height: 2px;
+    background-color: #e5a67a;
+    border: none;
+    margin-bottom: 60px;
+}
