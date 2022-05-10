@@ -1,0 +1,36 @@
+@charset 'utf-8';
+.nav li:nth-child(3){
+    color: #e5a67a;
+}
+.reserve-map .inner{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.reserve{
+    margin: 100px;
+}
+.reserve h3,.map h3{
+    font-weight: 600;
+    font-size: 28px;
+    color: #e5a67a;
+    text-align: center;
+    padding: 30px;
+}
+.reserve span,.map span{
+    font-weight: 400;
+    font-size: 12px;
+    color: #d4d4d4;
+    text-align: center;
+}
+.reserve p{
+    color: #d4d4d4;
+    text-align: center;
+}
+/* .map h3,.map span{
+    display: flex;
+    justify-content: center;
+    align-items:baseline;
+} */

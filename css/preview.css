@@ -13,10 +13,9 @@
 .nail-box{
     margin: 80px;
 }
-.nail-box:hover .nail-box img{
-    width: 350px;
-    height: 350px;
-}
+/* img:hover{
+    transform: calc(2,0.5);
+} */
 .nail-box p{
     display: flex;
     justify-content:center;
@@ -24,7 +23,7 @@
     margin: 10px;
 }
 .nail-box img{
-    width: 300px;
+    width: 350px;
     height: 300px;
     border-radius: 20px;
 }
