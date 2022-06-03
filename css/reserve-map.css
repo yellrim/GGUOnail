@@ -1,4 +1,4 @@
-@charset 'utf-8';
+@charset "utf-8";
 .nav li:nth-child(3){
     color: #e5a67a;
 }
@@ -35,4 +35,22 @@ hr{
     background-color: #e5a67a;
     border: none;
     margin-bottom: 60px;
+}
+
+@media (max-width:890px){
+    .reserve{
+        margin: 100px auto;
+    }
+    .map1,.map3{
+        display: none;
+    }
+}
+
+@media (max-width:590px){
+    .map1,.map2{
+        display: none;
+    }
+    .map3{
+        display: block;
+    }
 }

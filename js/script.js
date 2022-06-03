@@ -8,7 +8,7 @@ $(function(){
       arrows : true,    // 옆으로 이동하는 화살표 표시 여부
       dots : true,    // 스크롤바 아래 점으로 페이지네이션 여부
       autoplay : true,      // 자동 스크롤 사용 여부
-      autoplaySpeed : 10000,    // 자동 스크롤 시 다음으로 넘어가는데 걸리는 시간 (ms)
+      autoplaySpeed : 3000,    // 자동 스크롤 시 다음으로 넘어가는데 걸리는 시간 (ms)
       pauseOnHover : true,    // 슬라이드 이동 시 마우스 호버하면 슬라이더 멈추게 설정
       vertical : false,   // 세로 방향 슬라이드 옵션
       prevArrow : ".prev",    // 이전 화살표 모양 설정
@@ -18,17 +18,27 @@ $(function(){
       centerMode: true,  //센터모드 (active된 요소가 화면 가운데로,slidesToShow 갯수가 짝수 일 경우 아이템의 경계선이 가운데로 옴)
       responsive: [ // 반응형 웹 구현 옵션
         {  
+          breakpoint: 1200, //화면 사이즈 1200px
+          settings: {
+            //위에 옵션이 디폴트 , 여기에 추가하면 그걸로 변경
+            slidesToShow:2
+          } 
+        },
+        { 
           breakpoint: 960, //화면 사이즈 960px
           settings: {
             //위에 옵션이 디폴트 , 여기에 추가하면 그걸로 변경
-            slidesToShow:3 
+            slidesToShow:1 
           } 
         },
         { 
           breakpoint: 768, //화면 사이즈 768px
           settings: { 
             //위에 옵션이 디폴트 , 여기에 추가하면 그걸로 변경
-            slidesToShow:2 
+            slidesToShow:1,
+            arrows : false,    // 옆으로 이동하는 화살표 표시 여부
+            dots : false,    // 스크롤바 아래 점으로 페이지네이션 여부
+            centerMode: false,  //센터모드 (active된 요소가 화면 가운데로,slidesToShow 갯수가 짝수 일 경우 아이템의 경계선이 가운데로 옴)
           } 
         }
       ]

@@ -1,4 +1,4 @@
-@charset 'utf-8';
+@charset "utf-8";
 h3{
     display: none;
 }
@@ -49,4 +49,23 @@ h3{
 }
 .slick-dots li.slick-active button:before{
     color: #e5a67a;
+}
+/* 반응형 */
+@media (max-width:720px){
+    img{
+        width: none;
+    }
+    .slider-div {
+        /* slick을 적용시킬 요소 */
+        margin: 50px 100px;
+    
+    }
+}
+
+@media (max-width:600px){
+    .slider-div {
+        /* slick을 적용시킬 요소 */
+        margin: 50px auto;
+    
+    }
 }
